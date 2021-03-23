@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ontrack31C">
+        <activity android:name=".Endscreen"></activity>
+        <activity android:name=".Question5" />
+        <activity android:name=".Question4" />
+        <activity android:name=".Question3" />
+        <activity android:name=".Question2" />
+        <activity android:name=".Question1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
