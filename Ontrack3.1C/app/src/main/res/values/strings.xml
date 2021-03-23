@@ -4,4 +4,40 @@
     <string name="nameinput">Name</string>
     <string name="startbutton">Start</string>
     <string name="nametext">Please Enter Your Name:</string>
+    //quest texts
+    <string name="questtext">What function is seen here</string>
+    <string name="questtext2">What is the Correct way to assign an element</string>
+    <string name="questtext3">What Element Is pictured</string>
+    <string name="questtext4">What is the correct location for base UI Element Text</string>
+    <string name="questtext5">What is pictured here</string>
+
+    <string name="welcotext">Welcome Your Name!</string>
+    <string name="questnumb">0/5</string>
+    //quest buttons
+    <string name="a1">Onclick() event for button</string>
+    <string name="a2">OnClick() event for spinner</string>
+    <string name="a3">OnClick() event for Text Field</string>
+
+    <string name="a12">varname = findViewById(elementid)</string>
+    <string name="a22">varname == findViewById(elementid)</string>
+    <string name="a32">varname = findViewByid(R.id.elementid)</string>
+
+    <string name="a13">Spinner</string>
+    <string name="a23">RecyclerView</string>
+    <string name="a33">NavigationView</string>
+
+    <string name="a14">~/scripts/string.xml</string>
+    <string name="a24">~/res/values/strings.xml</string>
+    <string name="a34">~/java/values/string.jar</string>
+
+    <string name="a15">Layout Widget</string>
+    <string name="a25">Constraint Widget</string>
+    <string name="a35">Position Widget</string>
+
+    <string name="submit">Submit</string>
+    <string name="quit">Finish</string>
+    <string name="restart">Take New Quiz</string>
+    <string name="Fscore">0/5</string>
+    <string name="scoretext">Your Score:</string>
+    <string name="endtext">Congratulations Your Name!</string>
 </resources>
