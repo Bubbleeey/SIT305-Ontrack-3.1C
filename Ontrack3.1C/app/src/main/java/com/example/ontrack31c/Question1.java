@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +16,7 @@ public class Question1 extends AppCompatActivity {
 
     // global variables
     int points = 0;
+    String username;
     boolean submitted = false;
     int green = Color.parseColor("#99cc00");
     int red = Color.parseColor("#FC0000");
@@ -55,6 +57,8 @@ public class Question1 extends AppCompatActivity {
             Toast.makeText(Question1.this, "Error Please Select Answer First", Toast.LENGTH_LONG).show();
         } else {
             Intent intent = new Intent(this, Question2.class);
+            intent.putExtra("points", points);
+            intent.putExtra("username", username);
             startActivity(intent);
         }
     }
@@ -68,10 +72,14 @@ public class Question1 extends AppCompatActivity {
         TextView welcotext = findViewById(R.id.welcotext);
         // adding passed data from previous activity
         Intent gintent = getIntent();
-        String username = gintent.getStringExtra("username");
+        username = gintent.getStringExtra("username");
         //setting ui elements before load of activity
         welcotext.setText("Welcome " + username + "!");
         questnumb.setText("1/5");
+        //setting progress bar
+        ProgressBar quest = (ProgressBar) findViewById(R.id.progressBar);
+        quest.setMax(5);
+        quest.setProgress(1);
 
         button1 = findViewById(R.id.a1);
         button2 = findViewById(R.id.a2);
